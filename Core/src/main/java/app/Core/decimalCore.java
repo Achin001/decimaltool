@@ -1,6 +1,7 @@
-package com.app.decimal.Core;
+package app.Core;
 
 import java.math.BigDecimal;
+
 
 public class decimalCore {
     /**
@@ -26,6 +27,7 @@ public class decimalCore {
         BigDecimal b2 = new BigDecimal(Double.toString(v2));
         return b1.add(b2).doubleValue();
     }
+    
 
     /**
      * 提供精确的减法运算。
@@ -76,6 +78,17 @@ public class decimalCore {
      */
     public static double div(double v1, double v2, Integer scale) {
         return div(v1, v2, scale);
+    }
+
+    /**
+     * 提供精确的模运算
+     *
+     * @param v1 模1
+     * @param v2 模2
+     * @return 两个参数的模
+     */
+    public static double ramainder(double v1, double v2) {
+        return v1 % v2;
     }
 
     /**
